@@ -1,0 +1,145 @@
+body {
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: gray;
+  border-radius: 0;
+  border: 2px solid black;
+  border-color: #222;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+  height: 80px;
+
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: black;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: black;
+  text-align: center;
+  background-color: #cec5c5;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 2px solid black;
+}
+.navbar-header button.navbar-toggle {
+  clear: right;
+  margin-top: 10px;
+}
+/* END HEADER */
+
+/* HOME PAGE  */
+.container {
+  padding-left: 10px;
+  margin-bottom: 35px;
+}
+
+#main-content .titlePage{
+  font-family: 'Lora', serif;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 1px #222;
+
+}
+
+.menuSection{
+  background-color: rgb(169, 175, 175);
+  padding-left: 10px;
+
+}
+
+#main-content .menuSection .titleMenuHome h3{
+  font-weight: bold;
+  padding-top: 10px;
+
+  }
+
+  #section1, #section2, #section3 {
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+
+/* END HOME PAGE */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  
+  /* End Header */
+
+  /* Home Page */
+
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+
+  /* End Home Page */
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  /* End Header */
+
+  /* Home Page */
+
+
+}
