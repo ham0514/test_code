@@ -67,16 +67,21 @@ WARNING!!! WARNING!!!
   "use strict";
 
   var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-
+  var myP = document.getElementById('result');
+  var myResult = ""
   for (let name in names){
     var fName = (names[name]); 
     
     if (fName.charAt(0).toLowerCase() =="j"){
      byeSpeaker.speak(fName);
+   myResult +=  "Good bye " + fName + "<br>";
     }
     else{
       helloSpeaker.speak(fName);
+      myResult +=  "Hello " + fName + "<br>";
+ 
     }
   }
+  myP.innerHTML =  myResult;
 
 })();
