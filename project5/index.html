@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="lunchApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch Check Application</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1> Lunch App</h1>
+    <div ng-controller = "luchAppController">
+        Items you usually eat (comma-separated) :
+        <input type="text" ng-model="textFood" ng-keyup ="clearMsg()">
+        <button ng-click="validateText()">Validate</button>
+        <div>
+            {{msgView}}
+        </div>
+    </div>
+</body>
+</html>
